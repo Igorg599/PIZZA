@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const Button = ({onClick, className, outline, children}) => {
     return (
-        <button
+        <button onClick={onClick}
         className={classNames('button', className, {
             'button--outline': outline
         })}>{children}</button>
